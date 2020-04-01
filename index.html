@@ -86,15 +86,116 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、标题语法"><a href="#一、标题语法" class="headerlink" title="一、标题语法"></a>一、标题语法</h1><p><strong>语法</strong>：#+空格+文字</p>
-<p>例子：</p>
+        <h1 id="一、标题语法"><a href="#一、标题语法" class="headerlink" title="一、标题语法"></a>一、标题语法</h1><p><strong>语法</strong>：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br></pre></td></tr></table></figure>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h1 id="二、字体语法"><a href="#二、字体语法" class="headerlink" title="二、字体语法"></a>二、字体语法</h1><p><strong>语法:</strong><br><br>　　<strong>·加粗</strong>：<code>**加粗文字**</code><br><br>　　<em>斜体</em>:<code>*斜体文字*</code><br><br>  　　<del>划线</del>:<code>~~划线文字~~</code><br></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h1 id="二、字体语法"><a href="#二、字体语法" class="headerlink" title="二、字体语法"></a>二、字体语法</h1><p><strong>语法</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**加粗文字**</span><br><span class="line">*斜体文字*</span><br><span class="line">~~划线文字~~</span><br></pre></td></tr></table></figure>
+<p><strong>加粗</strong><br><em>斜体</em><br> <del>划线</del> </p>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p><strong>语法</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;引用1</span><br><span class="line">&gt;&gt;引用2</span><br><span class="line">&gt;&gt;&gt;引用3</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用1</p>
+<blockquote>
+<p>引用2</p>
+<blockquote>
+<p>引用3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p><strong>语法</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">！[图片描述](图片url “鼠标悬停字”)</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/22705647-4f26282f9bfb6e57.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片描述" title="鼠标悬停字"></p>
+<p>#六、超链接<br><strong>语法</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[名称](地址)</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.bilibili.com/" target="_blank" rel="noopener">b站</a><br>#七、列表<br><strong>语法</strong>：<br><strong>无序列表</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">*内容1</span><br><span class="line">*内容2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>内容1</li>
+<li>内容2</li>
+<li><em>有序列表*</em><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 内容3</span><br><span class="line">2. 内容4</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>内容3</li>
+<li>内容4</li>
+</ol>
+<p><strong>有序列表嵌套无序列表</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 内容A </span><br><span class="line">   三个空格 + * 内容a</span><br><span class="line">   三个空格 + * 内容a</span><br><span class="line">2. 内容B + 三个空格</span><br><span class="line">   三个空格 + * 内容b</span><br><span class="line">   三个空格 + * 内容b</span><br></pre></td></tr></table></figure>
+<ol>
+<li>内容A<ul>
+<li>内容a</li>
+<li>内容b</li>
+</ul>
+</li>
+<li>内容B<ul>
+<li>内容b</li>
+<li>内容b<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1></li>
+</ul>
+</li>
+</ol>
+<p><strong>语法</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">-|:-:|-:|</span><br><span class="line">内容A|内容B|内容C</span><br><span class="line"></span><br><span class="line">注：第一行表头</span><br><span class="line">   第二行分割表头和内容，冒号两边加是居中，冒号加右边是右对齐</span><br><span class="line">   第三行开始是内容</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th align="center">表头</th>
+<th align="right">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容A</td>
+<td align="center">内容B</td>
+<td align="right">内容C</td>
+</tr>
+<tr>
+<td># 九、代码</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>语法</strong>：</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>一行代码</strong></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;一行代码&#96;</span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><code>一行代码</code></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>多行代码</strong></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span><br><span class="line">多行代码</span><br><span class="line">多行代码</span><br><span class="line">(&#96;&#96;&#96;)</span><br><span class="line"></span><br><span class="line">注：去掉括号 三个点括起开头和结尾</span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">多行代码</span><br><span class="line">多行代码</span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+</tbody></table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1/" data-id="ck8hf796a0000o4q7frb6doqm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1/" data-id="ck8hfkhf600003oq738ofg76m" class="article-share-link">Share</a>
       
       
     </footer>
