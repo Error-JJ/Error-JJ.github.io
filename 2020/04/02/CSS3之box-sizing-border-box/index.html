@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>CSS3之box-sizing-border-box | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一般情况下： width和height是不计算border和padding距离，即width*height&#x3D;content有时候这样会让padding部分超出我们实际想要的范围 使用了box-sizing:border-box后： 使用了box-sizing:border-box后，矩形的height和width是把padding计算在内">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3之box-sizing-border-box">
+<meta property="og:url" content="http://yoursite.com/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一般情况下： width和height是不计算border和padding距离，即width*height&#x3D;content有时候这样会让padding部分超出我们实际想要的范围 使用了box-sizing:border-box后： 使用了box-sizing:border-box后，矩形的height和width是把padding计算在内">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/1.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/2.png">
+<meta property="article:published_time" content="2020-04-02T03:31:33.340Z">
+<meta property="article:modified_time" content="2020-04-02T03:36:42.402Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,83 +157,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-CSS3之transform：translate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-CSS3之box-sizing-border-box" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/02/CSS3%E4%B9%8Btransform%EF%BC%9Atranslate/">CSS3之transform：translate</a>
-    </h1>
-  
-
-        
-        <a href="/2020/04/02/CSS3%E4%B9%8Btransform%EF%BC%9Atranslate/" class="archive-article-date">
-  	<time datetime="2020-04-02T03:32:15.755Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>代码</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.test&#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    transform: translate(-50%, -50%);</span><br><span class="line">    width: 30%;</span><br><span class="line">    height: 30%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在默认情况下矩形的校准点在左上角<br><img src="/2020/04/02/CSS3%E4%B9%8Btransform%EF%BC%9Atranslate/1.png" alt></p>
-<p>使用了 transform: translate(-50%, -50%)后把校准点调到矩形中间<br><img src="/2020/04/02/CSS3%E4%B9%8Btransform%EF%BC%9Atranslate/2.png" alt="20170221225336270.png"></p>
-<p>这样既可实现水平垂直居中</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/02/CSS3%E4%B9%8Btransform%EF%BC%9Atranslate/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-CSS3之box-sizing-border-box" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/">CSS3之box-sizing-border-box</a>
+    <h1 class="article-title" itemprop="name">
+      CSS3之box-sizing-border-box
     </h1>
   
 
@@ -247,6 +185,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -254,16 +213,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/02/CSS3%E4%B9%8Bbox-sizing-border-box/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/04/02/CSS3%E4%B9%8Btransform%EF%BC%9Atranslate/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CSS3之transform：translate
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/02/vue-cli3%E5%8F%96%E6%B6%88eslint%E6%A0%A1%E9%AA%8C%E4%BB%A3%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue-cli3取消eslint校验代码</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -283,366 +310,14 @@
 
 
 
-
   
-    <article id="post-vue-cli3取消eslint校验代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/02/vue-cli3%E5%8F%96%E6%B6%88eslint%E6%A0%A1%E9%AA%8C%E4%BB%A3%E7%A0%81/">vue-cli3取消eslint校验代码</a>
-    </h1>
   
 
-        
-        <a href="/2020/04/02/vue-cli3%E5%8F%96%E6%B6%88eslint%E6%A0%A1%E9%AA%8C%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-  	<time datetime="2020-04-02T03:31:07.486Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>vue会有一个eslint校验严格检查代码语法，连空格都不放过，导致经常因为空格多了或少了不能运行项目。</p>
-<p>网上查询如何把eslint关闭，发现大多数都是在webpack.base.conf.js中修改，但是vue-cli3中找不到webpack.base.conf.js这个文件，所以需要修改项目根目录的.eslintrc.js</p>
-<p><strong>打开项目根目录的.selintrc.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">  root: true,</span><br><span class="line">  env: &#123;</span><br><span class="line">    node: true</span><br><span class="line">  &#125;,</span><br><span class="line">  extends: [</span><br><span class="line">    &#39;plugin:vue&#x2F;essential&#39;,</span><br><span class="line">    &#x2F;*&#39;@vue&#x2F;standard&#39; *&#x2F;注释掉这一行</span><br><span class="line">  ],</span><br><span class="line">  parserOptions: &#123;</span><br><span class="line">    parser: &#39;babel-eslint&#39;</span><br><span class="line">  &#125;,</span><br><span class="line">  rules: &#123;</span><br><span class="line">    &#39;no-console&#39;: process.env.NODE_ENV &#x3D;&#x3D;&#x3D; &#39;production&#39; ? &#39;error&#39; : &#39;off&#39;,</span><br><span class="line">    &#39;no-debugger&#39;: process.env.NODE_ENV &#x3D;&#x3D;&#x3D; &#39;production&#39; ? &#39;error&#39; : &#39;off&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>@vue/standard把这一行注释掉</p>
-<p>重新启动项目即可</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/02/vue-cli3%E5%8F%96%E6%B6%88eslint%E6%A0%A1%E9%AA%8C%E4%BB%A3%E7%A0%81/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Git基本操作指令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/02/Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/">Git基本操作指令</a>
-    </h1>
   
 
-        
-        <a href="/2020/04/02/Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-04-02T03:28:52.818Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-创建git仓库"><a href="#1-创建git仓库" class="headerlink" title="1. 创建git仓库"></a>1. 创建git仓库</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-修改配置（名字和邮箱）"><a href="#2-修改配置（名字和邮箱）" class="headerlink" title="2.  修改配置（名字和邮箱）"></a>2.  修改配置（名字和邮箱）</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">git config [--global] user.email &quot;[your email@your email]&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="3-克隆项目"><a href="#3-克隆项目" class="headerlink" title="3.  克隆项目"></a>3.  克隆项目</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &quot;url地址&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-加入文件到暂存区"><a href="#4-加入文件到暂存区" class="headerlink" title="4.  加入文件到暂存区"></a>4.  加入文件到暂存区</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add &quot;file1&quot; &quot;file2&quot; &#x2F;&#x2F;添加指定文件</span><br><span class="line">git add . &#x2F;&#x2F;添加所有文件</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-删除文件并讲操作反馈到暂存区"><a href="#5-删除文件并讲操作反馈到暂存区" class="headerlink" title="5.  删除文件并讲操作反馈到暂存区"></a>5.  删除文件并讲操作反馈到暂存区</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm &quot;file1&quot; &quot;file2&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="6-将暂存区提交到仓库"><a href="#6-将暂存区提交到仓库" class="headerlink" title="6.  将暂存区提交到仓库"></a>6.  将暂存区提交到仓库</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;操作描述&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="7-查看所有本地分支"><a href="#7-查看所有本地分支" class="headerlink" title="7. 查看所有本地分支"></a>7. 查看所有本地分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-
-<h1 id="8-新建一个分支，但依然停留在当前分支"><a href="#8-新建一个分支，但依然停留在当前分支" class="headerlink" title="8. 新建一个分支，但依然停留在当前分支"></a>8. 新建一个分支，但依然停留在当前分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch &quot;branch-name&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="9-新建一个分支，并切换到该分支"><a href="#9-新建一个分支，并切换到该分支" class="headerlink" title="9. 新建一个分支，并切换到该分支"></a>9. 新建一个分支，并切换到该分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &quot;branch-name&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="10-切换到指定分支，并更新工作区"><a href="#10-切换到指定分支，并更新工作区" class="headerlink" title="10. 切换到指定分支，并更新工作区"></a>10. 切换到指定分支，并更新工作区</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &quot;branch-name&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="11-删除分支"><a href="#11-删除分支" class="headerlink" title="11. 删除分支"></a>11. 删除分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d &quot;branch-name&quot;</span><br></pre></td></tr></table></figure>
-<h1 id="12-显示有变更的文件"><a href="#12-显示有变更的文件" class="headerlink" title="12. 显示有变更的文件"></a>12. 显示有变更的文件</h1> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
-
-<h1 id="13-上传本地指定分支到远程仓库"><a href="#13-上传本地指定分支到远程仓库" class="headerlink" title="13. 上传本地指定分支到远程仓库"></a>13. 上传本地指定分支到远程仓库</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;要将 master 分支推送到 origin 服务器</span><br><span class="line">git push origin master</span><br><span class="line">&#x2F;&#x2F;强制上传</span><br><span class="line">git push origin master -f</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/02/Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo基本操作指令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/02/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/">hexo基本操作指令</a>
-    </h1>
   
 
-        
-        <a href="/2020/04/02/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-04-02T03:27:49.466Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-创建hexo"><a href="#1-创建hexo" class="headerlink" title="1. 创建hexo"></a>1. 创建hexo</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-启动hexo本地服务器"><a href="#2-启动hexo本地服务器" class="headerlink" title="2. 启动hexo本地服务器"></a>2. 启动hexo本地服务器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<h1 id="3-清理缓存文件"><a href="#3-清理缓存文件" class="headerlink" title="3. 清理缓存文件"></a>3. 清理缓存文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-生成静态网页"><a href="#4-生成静态网页" class="headerlink" title="4.生成静态网页"></a>4.生成静态网页</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g &#x2F;&#x2F;使用前先ctrl + c退出hexo s</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-部署到服务器"><a href="#5-部署到服务器" class="headerlink" title="5. 部署到服务器"></a>5. 部署到服务器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d &#x2F;&#x2F;使用前先ctrl + c退出hexo s</span><br></pre></td></tr></table></figure>
-
-<h1 id="6-新建博客文章"><a href="#6-新建博客文章" class="headerlink" title="6. 新建博客文章"></a>6. 新建博客文章</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;文件名&quot;</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/02/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Markdown基本语法-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1/">Markdown基本语法</a>
-    </h1>
-  
-
-        
-        <a href="/2020/04/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1/" class="archive-article-date">
-  	<time datetime="2020-04-01T12:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p><strong>语法</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br></pre></td></tr></table></figure>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><p><strong>语法</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**加粗文字**</span><br><span class="line">*斜体文字*</span><br><span class="line">~~划线文字~~</span><br></pre></td></tr></table></figure>
-<p><strong>加粗</strong><br><em>斜体</em><br> <del>划线</del> </p>
-<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p><strong>语法</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;引用1</span><br><span class="line">&gt;&gt;引用2</span><br><span class="line">&gt;&gt;&gt;引用3</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>引用1</p>
-<blockquote>
-<p>引用2</p>
-<blockquote>
-<p>引用3</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p><strong>语法</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure>
-<hr>
-<hr>
-<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">！[图片描述](图片url “鼠标悬停字”)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/04/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1/1.jpg" alt="图片描述" title="鼠标悬停字"></p>
-<h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p><strong>语法</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[名称](地址)</span><br></pre></td></tr></table></figure>
-<p><a href="https://www.bilibili.com/" target="_blank" rel="noopener">b站</a></p>
-<h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><p><strong>语法</strong>：<br><strong>无序列表</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">*内容1</span><br><span class="line">*内容2</span><br></pre></td></tr></table></figure>
-<ul>
-<li>内容1</li>
-<li>内容2</li>
-</ul>
-<p><strong>有序列表</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 内容3</span><br><span class="line">2. 内容4</span><br></pre></td></tr></table></figure>
-<ol>
-<li>内容3</li>
-<li>内容4</li>
-</ol>
-<p><strong>有序列表嵌套无序列表</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 内容A </span><br><span class="line">   三个空格 + * 内容a</span><br><span class="line">   三个空格 + * 内容a</span><br><span class="line">2. 内容B + 三个空格</span><br><span class="line">   三个空格 + * 内容b</span><br><span class="line">   三个空格 + * 内容b</span><br></pre></td></tr></table></figure>
-<ol>
-<li>内容A<ul>
-<li>内容a</li>
-<li>内容b</li>
-</ul>
-</li>
-<li>内容B<ul>
-<li>内容b</li>
-<li>内容b</li>
-</ul>
-</li>
-</ol>
-<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p><strong>语法</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">-|:-:|-:|</span><br><span class="line">内容A|内容B|内容C</span><br><span class="line"></span><br><span class="line">注：第一行表头</span><br><span class="line">   第二行分割表头和内容，冒号两边加是居中，冒号加右边是右对齐</span><br><span class="line">   第三行开始是内容</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th align="center">表头</th>
-<th align="right">表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容A</td>
-<td align="center">内容B</td>
-<td align="right">内容C</td>
-</tr>
-</tbody></table>
-<h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p><strong>语法</strong>:<br><br><strong>一行代码</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;一行代码&#96;</span><br></pre></td></tr></table></figure>
-<p><code>一行代码</code><br><br><strong>多行代码</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span><br><span class="line">多行代码</span><br><span class="line">多行代码</span><br><span class="line">(&#96;&#96;&#96;)</span><br><span class="line"></span><br><span class="line">注：去掉括号 三个点括起开头和结尾</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">多行代码</span><br><span class="line">多行代码</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -665,8 +340,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
